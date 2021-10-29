@@ -39,8 +39,8 @@ export class MainpanelComponent implements OnInit {
     
     let totalCost = stock.stockPrice*unitsToBuy;
     console.log("inside add stock "+stock.stockPrice+" - "+unitsToBuy+" - "+totalCost);
-    let selStock = new SelectedStock(stock,unitsToBuy,totalCost);
-    this.selectedStockArr.push(selStock);
+    let selStock = new SelectedStock(stock,unitsToBuy,totalCost); // DTO class
+    this.selectedStockArr.push(selStock);  // pending
     this.totalPortfolioValue += totalCost;
     console.log("Total Portfolio cost "+this.totalPortfolioValue);
   }

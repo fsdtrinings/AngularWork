@@ -20,7 +20,7 @@ export class AppComponent {
 
   constructor()
   {
-    this.bankArr.push(new BankDetails('ICICI-Bank','icici123','Delhi - ABC'));
+    this.bankArr.push(new BankDetails('ICICI-Bank','icici123','Delhi'));
     this.bankArr.push(new BankDetails('HDFC-Bank','ABV23','Delhi - Bghj'));
     this.bankArr.push(new BankDetails('SBI-Bank','fgvrt123','Noida - 1'));
     this.bankArr.push(new BankDetails('Axis-Bank','ythty23','Noida - 2'));
@@ -31,6 +31,6 @@ export class AppComponent {
   doThis(fund:string)
   {
     let fund2 = parseInt(fund);
-    console.log("Button clicked ...."+(fund2+1));
+    console.log("Button clicked ...."+(fund2));
   }
 }

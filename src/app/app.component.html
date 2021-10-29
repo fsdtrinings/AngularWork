@@ -27,16 +27,23 @@
   <input type="button" (click)="doThis(x.value)" value="Do Action"/>
 </div>
 
+<br><br/><hr/>
+Bank Array Output 
+
+<table>
+  <tr *ngFor="let bankInfo of bankArr">
+    <td> {{bankInfo.bankName}}  </td>
+    <td> {{bankInfo.ifscCode}}  </td>
+    <td> {{bankInfo.location}}  </td>
+    <td> {{(bankInfo.location .localeCompare(""))?"Local Bank":"Other State"}}  </td> 
+   <td> {{(bankInfo.location == "Delhi")?"Local Bank":"Other State"}}  </td>
+    
+      
+  </tr>
+
+</table>
 
 
-
-<!--    
-
-  var fund = document.getElementById("fund101");  #fund
-
-  passtoAction(fund.value)
-
--->
 
 
 
