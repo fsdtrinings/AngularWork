@@ -1,11 +1,44 @@
 <div> <app-appheader></app-appheader> </div>
 <div> <app-linkheader></app-linkheader> </div>
 
-<table>
+<table border="1">
   <tr>
-    <td> <app-leftpanel></app-leftpanel>  </td>
-    <td> <app-mainpanel></app-mainpanel>  </td>
-    <td> <app-rightpanel></app-rightpanel>  </td>
+    <td style="width: 15%;"> <app-leftpanel></app-leftpanel>  </td>
+    <td style="width: 75%;"> <app-mainpanel></app-mainpanel>  </td>
+    <td style="width: 10%;"> <app-rightpanel></app-rightpanel>  </td>
     
   </tr>
 </table>
+
+<div style="margin-left: 10%;">
+  <br/><h1> <u>CLass Work</u> </h1> <br/><br/><br/><br/><br/>  <hr/>
+  Welcome {{username}} , Bank Name is {{bankName}}
+  
+  
+  <br/>{{1+1}}
+  <br/>{{username.toUpperCase()}}
+  <br/>{{(balance>1000)?"Good Amount":"Less Amount"}}
+  <br/>{{bankInfo.bankName}}
+  <br/>{{bankArr[0].bankName}}
+  
+  Enter Fund t/f Amount  <input type="text" id="fund101" [disabled]="status"  #x/>
+
+
+  <input type="button" (click)="doThis(x.value)" value="Do Action"/>
+</div>
+
+
+
+
+<!--    
+
+  var fund = document.getElementById("fund101");  #fund
+
+  passtoAction(fund.value)
+
+-->
+
+
+
+
+<br/><br/><br/><br/><br/>  <hr/>
