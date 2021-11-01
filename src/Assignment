@@ -1,0 +1,13 @@
+
+Project 1 - Microservice for OTP generation and validation  - Sumit Adlekha
+Problem statement: Develop a service to provide an API to generate an OTP and each OTP should be valid for a specified time period, e.g. 5 minutes. 
+Another API should be provided to validate the OTP against that OTP entered by the user.
+User should not be able to enter the OTP for any other user.
+
+Tech stack - Use Java/ Spring Boot and SQL engine to develop this.
+
+Write Unit Tests
+
+Write performance test cases – using tools like JMeter/ Gatling. 
+
+Good to have – if integration can be done with sending the OTP over email or Phone SMS.
