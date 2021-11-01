@@ -1,1 +1,17 @@
-<p>rightpanel works!</p>
+<div class="rp">
+
+
+    <input type="text" value="{{username}}" [(ngModel)]="username"/>
+    <b>{{username}}</b>
+
+    Enter Age
+    <input type="text" value="{{age}}" (keyup)="doKeyUp($event)"/>
+    
+    <div *ngIf="isValidAge;then aBlock else bBlock"></div>
+    <ng-template #aBlock> <div [class.ok]="isValidAge">Approved </div>  </ng-template> 
+    <ng-template #bBlock> <div [class.error]="!isValidAge">Age not valid </div></ng-template> 
+
+   
+    
+
+</div>

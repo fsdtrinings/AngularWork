@@ -44,4 +44,11 @@ export class MainpanelComponent implements OnInit {
     this.totalPortfolioValue += totalCost;
     console.log("Total Portfolio cost "+this.totalPortfolioValue);
   }
+
+  doThings(event:any)
+  {
+    console.log("Do Things "+event.target.value);
+    
+  }
+
 }

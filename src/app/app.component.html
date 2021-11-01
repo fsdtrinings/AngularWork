@@ -4,7 +4,9 @@
 <table border="1">
   <tr>
     <td style="width: 15%;"> <app-leftpanel></app-leftpanel>  </td>
-    <td style="width: 75%;"> <app-mainpanel></app-mainpanel>  </td>
+    <td style="width: 75%;"> 
+      <router-outlet></router-outlet>
+      </td>
     <td style="width: 10%;"> <app-rightpanel></app-rightpanel>  </td>
     
   </tr>
@@ -47,5 +49,16 @@ Bank Array Output
 
 
 
+
+<br/><br/><br/><br/><br/>  <hr/>
+
+<div style="margin-bottom: 30%;">
+  Today Date is  <b> {{todayDate}}  </b> <br/><br/>
+  Formatted Date  <b> {{todayDate|date:'fullDate'|uppercase}} </b>
+  Formatted Date  <b> {{todayDate|date}} </b>
+  <br/>
+  My Pipe Output {{username | mypipe123}}
+    
+</div>
 
 <br/><br/><br/><br/><br/>  <hr/>

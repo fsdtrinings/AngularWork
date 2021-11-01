@@ -15,6 +15,9 @@ export class AppComponent {
   bankArr:BankDetails[] = [];
   status:boolean = false;
 
+  todayDate:Date=new Date();
+  a: number = 0.259;
+  b: number = 1.3495;
   bankInfo:BankDetails = new BankDetails('IDBI-Bank','IDBI-123','Delhi - ABC');
 
 
